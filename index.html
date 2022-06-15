@@ -10,7 +10,22 @@
     <title>Document</title>
 </head>
 <body>
-    <py-script> print('Hello world2')</py-script> 
+    <py-script> print('Hello world2')
+        from turtle import *
+        color('red', 'yellow')
+        begin_fill()
+        while True:
+            forward(200)
+            left(170)
+            if abs(pos()) < 1:
+                break
+        end_fill()
+        done()
+    
+    </py-script> 
+
+    <py-script>
+    </py-script>
     <h1>Hello world</h1>
 </body>
 </html>
